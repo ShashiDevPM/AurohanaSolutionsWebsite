@@ -314,15 +314,15 @@ background-image: url("../images/automation.JPG") ;
   background-image: url("../images/atm.jpg");
 }
 #pic_projects.p3 {
-  background-image: url("../images/finance.png");
+  background-image: url("../images/finance.jpg");
 }
 #pic_projects.p4 {
-  background-image: url("");
+  background-image: url("../images/business.jpg");
 }
 
 /*-----------*/
 #pic_tech{
-background-image: url("../images/automation.JPG") ;
+background-image: url("../images/webdesign.JPG") ;
 	background-repeat: no-repeat;
   width: 95px;
     height: 170px;
@@ -331,19 +331,19 @@ background-image: url("../images/automation.JPG") ;
   float:left;
 }
 #pic_tech.p1 {
-  background-image: url("../images/automation.JPG");
+  background-image: url("../images/webdesign.jpg");
 }
 #pic_tech.p2 {
-  background-image: url("../images/atm.jpg");
+  background-image: url("../images/database.jpg");
 }
 #pic_tech.p3 {
-  background-image: url("../images/finance.png");
+  background-image: url("../images/java.jpg");
 }
 #pic_tech.p4 {
-  background-image: url("");
+  background-image: url("../images/microsoft.jpg");
 }
 #pic_tech.p5 {
-  background-image: url("");
+  background-image: url("../images/graphic.jpg");
 }
 
 
