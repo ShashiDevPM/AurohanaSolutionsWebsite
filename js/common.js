@@ -21,6 +21,23 @@ $(document).ready(function(){
    
 });
 
+function myFunction(clicked_id) {
+	
+	if(window.innerWidth<992){
+		if(clicked_id=="ourProjects"){
+			
+			document.getElementById("projDropdown").classList.toggle("show");
+		}
+		else if(clicked_id=="technology"){
+			document.getElementById("techDropdown").classList.toggle("show");
+		}
+		else{
+			document.getElementById("opDropdown").classList.toggle("show");
+		}
+	
+	}
+}
+
 (function($) {
 	"use strict";
 
