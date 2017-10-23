@@ -102,27 +102,28 @@ VERSION : 1.1
     		</div>
            </li>
           
-            <li class="dropdown"><a id="technology" onclick="myFunction(this.id)" class="page-scroll">TECHNOLOGY</a>
-           	 <div id="techDropdown" class="dropdown-content tech">
-           	 <div  class="dropdownimg-div">
-           	 <ul class="dropdownimg-proj-ul">
-           	 	<li class="dropdownimg-li">
-           	 		<!--<img class="dropdownimg" src="images/loading.gif" >-->
-           	 		 <img id="pic_tech" ></img>
-           	 	</li>
-           	 </ul>
-           	 </div>
-           	 <ul >
-          	<li>
-              <a href="technology.html#web" rel="p1">Web Technologies</a>
-              <a href="technology.html#database" rel="p2">Databases</a>
-              <a href="technology.html#java" rel="p3">Java</a>
-              <a href="technology.html#microsoft" rel="p4">Microsoft Technologies</a>
-              <a href="technology.html#graphic" rel="p5">Graphic Design</a>
-				 </li>
-			</ul>
-    		</div>
-           </li>
+           <li class="dropdown"><a id="technology" onclick="myFunction(this.id)" class="page-scroll">TECHNOLOGY</a>
+            <div id="techDropdown" class="dropdown-content tech">
+              <div  class="dropdownimg-div">
+                <ul class="dropdownimg-proj-ul">
+                    <li class="dropdownimg-li">
+                      <!--<img class="dropdownimg" src="images/loading.gif" >-->
+                      <img id="pic_tech" ></img>
+                    </li>
+                </ul>
+              </div>
+              <ul >
+                <li>
+                  <a href="tech-web.html" rel="p1">Web Technologies</a>
+                  <a href="tech-database.html" rel="p2">Databases</a>
+                  <a href="tech-java.html" rel="p3">Java</a>
+                  <a href="tech-microsoft.html" rel="p4">Microsoft Technologies</a>
+                  <a href="tech-graphic.html" rel="p5">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+         </li>
+         
             <li class="dropdown"><a id="operations" onclick="myFunction(this.id)" class="page-scroll">OPERATIONS</a>
            	 <div id="opDropdown" class="dropdown-content">
       			<a href="#">Staff Augmentation</a>
@@ -144,28 +145,31 @@ VERSION : 1.1
    <!-- [/MAIN-HEADING]
  ============================================================================================================================--> 
  <section class="recent-works text-center" id="automation">
-    <div class="container">
-      
-        
-    
+    <div class="container "> 
+      <div class="row row-works contactus">
+             
+                <div class="col-sm-6 contact_form">
+                  
+               
+                  <div class="section" id="contactForm">
+                    <div class="widget ContactForm" data-version="1" id="ContactForm1">
+                      <form id="contactForm" method="post" class="table" role="form">
+                          <input class="name form-control  " id="ContactForm1_contact-form-name" name="name" placeholder="name" required="required" type="text" value="">
+                          <input class="name email form-control  " id="ContactForm1_contact-form-email " name="email" placeholder="email" required="required" type="text" value="">
+                          <textarea cols="30" id="ContactForm1_contact-form-email-message " name="message" placeholder="type your message here ..." rows="10" class="form-control  "></textarea>
+                          <input  id="ContactForm1_contact-form-submit" name="submit" type="submit" value="Send" class="btn btn-primary btn-send">
+                          <div style="text-align: center; max-width: 222px; width: 100%">
+                            <p class="contact-form-error-message" id="ContactForm1_contact-form-error-message"></p>
+                            <p class="contact-form-success-message" id="ContactForm1_contact-form-success-message"></p>
+                          </div>
+                      </form>
+                   </div>
+                 </div> 
+               </div>
 
-      <div class="row row-works">
-        <div class="col-sm-5 port-item margin-bottom works-image">
-          <div class="item-img-wrap">
-            <!-- <img src="images/automation.jpg" class="img-responsive" alt="workimg">
-            <div class="item-img-overlay">
-              <a href="#" class="show-image">
-                <span></span>
-              </a>
-            </div> -->
-          </div>
-          
-        </div> <!-- /portfolio-item -->
-
-        <div class="col-sm-7 port-item margin-bottom" id="map">
-          
-      </div>
-      </div> <!-- /row -->
+              <div class="col-sm-6 port-item maps">
+                  <div style="width: 100%; margin: 5% auto"><iframe width="100%" height="500" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&coord=17.4151674,78.447881&q=Flat%204A%2CAtlas%20Apartments%2C%20Road%20No%2010%2CBanjara%20hills+(Aurohana%20Solutions%20PVT%20Ltd)&ie=UTF8&t=&z=17&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Create a custom Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div>
+              </div> <!-- /row -->
 
       
 

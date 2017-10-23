@@ -693,7 +693,7 @@ p.lead
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	position: absolute;
-	top: 30%;
+	margin: 10% 0px;
 	left: 0;
 	right: 0;
 }
@@ -770,7 +770,7 @@ p.lead
    
     width: 100%;
     margin-top: 60px;
-    padding-top:60px;
+    padding-top:25px;
     
      
    
@@ -779,11 +779,17 @@ p.lead
 
 .row-works{
       
+    -webkit-animation: slideInRight 1s linear;
+    -webkit-animation-iteration-count: 1;
+    animation: slideInRight 1s linear;
+    animation-iteration-count: 1;
     background: rgb(145, 142, 133);
     padding: 0px;
     margin-bottom: 5px;
     
 }
+
+
 .item-img-wrap{
     
     position: relative;
@@ -1046,7 +1052,9 @@ font-family: 'Century Gothic';
 /*----------------CONTACTUS
 
 -------------------------------------------------------*/
-
+.contact_form{
+    margin:5% auto;
+}
 #map {
     height: 400px;
   }
@@ -1074,7 +1082,7 @@ font-family: 'Century Gothic';
 }
 
 .form-control {
-  background-color: #222;
+  background-color: rgb(255, 255, 255);
   color: #4c4c4c;
   box-shadow: none;
   height: 60px;
@@ -1118,7 +1126,16 @@ font-family: 'Century Gothic';
   color: #8A8A8A;
   font-size: 17px;
 }
-
+.btn-send{
+    width: 100%;
+    background-color : #D4AF37;
+    border: 0px solid #D4AF37;
+}
+.btn-send:hover{
+  
+    border: 0px solid #D4AF37;
+    background-color : #D4AF37;
+}
 .error { color: #FF4C4C !important; }
 
 .valid { color: #4CAF50 !important; }
@@ -1136,7 +1153,7 @@ font-family: 'Century Gothic';
 }
 .site-footer >.container
 {
-    padding:30px 0px;
+    padding:10px 0px;
 }
 
 .site-footer small

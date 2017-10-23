@@ -23,15 +23,21 @@ $(document).ready(function(){
 
 function myFunction(clicked_id) {
 	
-	if(window.innerWidth<992){
+	if(window.innerWidth<1200){
 		if(clicked_id=="ourProjects"){
 			
-			document.getElementById("projDropdown").classList.toggle("show");
+            document.getElementById("projDropdown").classList.toggle("show");
+            document.getElementById("techDropdown").classList.remove("show");
+            document.getElementById("opDropdown").classList.remove("show");
 		}
 		else if(clicked_id=="technology"){
-			document.getElementById("techDropdown").classList.toggle("show");
+			document.getElementById("projDropdown").classList.remove("show");
+            document.getElementById("techDropdown").classList.toggle("show");
+            document.getElementById("opDropdown").classList.remove("show");
 		}
 		else{
+            document.getElementById("projDropdown").classList.remove("show");
+            document.getElementById("techDropdown").classList.remove("show");           
 			document.getElementById("opDropdown").classList.toggle("show");
 		}
 	
