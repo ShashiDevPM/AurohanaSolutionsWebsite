@@ -36,7 +36,7 @@ VERSION : 1.1
 	<link rel="stylesheet" type="text/css" href="css/color/gold.css">
         
 </head>
-<body >
+<body ng-app="techApp">
 <!-- [ LOADERs ]
 ================================================================================================================================-->	
     <div class="preloader">
@@ -49,7 +49,44 @@ VERSION : 1.1
 =============================================================================================================================-->
 <!-- [WRAPPER ]
 =============================================================================================================================-->
-<div class="wrapper">
+
+<script type="text/ng-template" id="technology.html">
+    <div class="wrapper">
+
+
+        <section class="recent-works text-center" id="automation" >
+              
+          <div class="container">  
+            <div class="row row-works">
+              <div class="col-sm-5 port-item margin-bottom works-image">
+                <div class="item-img-wrap">
+                  <img ng-src="{{planet.img}}" class="img-responsive" alt="workimg">
+                  <div class="item-img-overlay">
+                    <a href="#" class="show-image">
+                      <span></span>
+                    </a>
+                  </div>
+                </div>
+                
+              </div> <!-- /portfolio-item -->
+    
+              <div class="col-sm-7 port-item margin-bottom">
+                <div class="work-desc">
+                    <h1><a href="#">{{planet.title}}</a></h1>
+                    <span>{{planet.description}}</span>
+    
+                  </div>
+            </div>
+            </div> <!-- /row -->
+    
+            
+    
+          </div> <!-- /container -->
+        
+      
+        
+        </section>
+    </script>
   <!-- [NAV]
  ============================================================================================================================-->    
    <!-- Navigation
@@ -91,10 +128,10 @@ VERSION : 1.1
            	<!-- <span id="pic"></span>--> 
           <ul >
           	<li>
-          		<a href="proj-automation.html" rel="p1" class="page-scroll">Test Automation</a>
-      			<a href="proj-atm.html" rel="p2">ATM Software</a>
-      			<a href="proj-finance.html" rel="p3">Finance Management</a>
-      			<a href="proj-business.html" rel="p4">Business Operations</a>
+                    <a href="our-projects.html#!/automation" rel="p1" >Test Automation</a>
+                    <a href="our-projects.html#!/atm" rel="p2">ATM Software</a>
+                    <a href="our-projects.html#!/finance" rel="p3">Finance Management</a>
+                    <a href="our-projects.html#!/business" rel="p4">Business Operations</a>
           	</li>
           </ul>
       			
@@ -113,11 +150,11 @@ VERSION : 1.1
               </div>
               <ul >
                 <li>
-                  <a href="tech-web.html" rel="p1">Web Technologies</a>
-                  <a href="tech-database.html" rel="p2">Databases</a>
-                  <a href="tech-java.html" rel="p3">Java</a>
-                  <a href="tech-microsoft.html" rel="p4">Microsoft Technologies</a>
-                  <a href="tech-graphic.html" rel="p5">Graphic Design</a>
+                  <a href="technology.html#!/web" rel="p1">Web Technologies</a>
+                  <a href="technology.html#!/database" rel="p2">Databases</a>
+                  <a href="technology.html#!/java" rel="p3">Java</a>
+                  <a href="technology.html#!/microsoft" rel="p4">Microsoft Technologies</a>
+                  <a href="technology.html#!/graphic" rel="p5">Graphic Design</a>
                 </li>
               </ul>
             </div>
@@ -131,7 +168,7 @@ VERSION : 1.1
       		</li>
            
              <li><a  class="page-scroll">SUPPORT</a></li>
-            <li><a href="#"  class="page-scroll">CONTACT US</a></li>
+             <li><a href="contact.html"  class="page-scroll">CONTACT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -146,36 +183,11 @@ VERSION : 1.1
  
  <!-- [RECENT-WORKS]
  ============================================================================================================================-->
-     <section class="recent-works text-center" id="automation">
-      <div class="container">  
-        <div class="row row-works">
-          <div class="col-sm-5 port-item margin-bottom works-image">
-            <div class="item-img-wrap">
-              <img src="images/microsoft_body.jpg" class="img-responsive" alt="workimg">
-              <div class="item-img-overlay">
-                <a href="#" class="show-image">
-                  <span></span>
-                </a>
-              </div>
-            </div>
-            
-          </div> <!-- /portfolio-item -->
 
-          <div class="col-sm-7 port-item margin-bottom">
-            <div class="work-desc">
-                <h1><a href="#">Microsoft Technologies</a></h1>
-                <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
-
-              </div>
-        </div>
-        </div> <!-- /row -->
-
-        
-
-      </div> <!-- /container -->
-    </section>
     <!-- / Portfolio -->
- 
+    <div class="planet-container">
+            <div class="planet-view" ng-view></div>
+          </div>
  
  <!-- [/OUR-RECENT WORKS]-->
 
@@ -245,8 +257,12 @@ VERSION : 1.1
         
         <!-- [ COMMON SCRIPT ] -->
           <script src="library/vegas/vegas.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
 	<script src="js/common.js"></script>
-  
+    <script src="js/common-ang.js"></script>
+    
 </body>
 <script type="text/javascript">
  $(document).ready(function()

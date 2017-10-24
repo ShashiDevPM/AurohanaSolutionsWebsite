@@ -356,6 +356,8 @@ background-image: url("../images/webdesign.JPG") ;
 .btn {
     font-size: 14px;
  
+    margin-right: 0px;
+
     text-transform: uppercase;
     border-radius: 0;
 }
@@ -377,8 +379,9 @@ background-image: url("../images/webdesign.JPG") ;
     color: #fff;
 }
 .btn-custom-outline {
-	border-radius: 3px;
-	padding: 0.8em 1.8em;
+	
+    padding-right: 0px;
+    padding-left: 0px;
 	color: #fff;
 	font-weight: 700;
 	-webkit-transition: all .5s ease-out;
@@ -392,7 +395,7 @@ background-image: url("../images/webdesign.JPG") ;
 	background-color: rgba(255,255,255,.5);
 }
 .btn-bar a{
-	margin-right: 10px;
+	margin-right: 0px;
 }
 
 /*	PRELOADER
@@ -779,10 +782,10 @@ p.lead
 
 .row-works{
       
-    -webkit-animation: slideInRight 1s linear;
+   /*  -webkit-animation: slideInRight 1s linear;
     -webkit-animation-iteration-count: 1;
     animation: slideInRight 1s linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
     background: rgb(145, 142, 133);
     padding: 0px;
     margin-bottom: 5px;
@@ -1053,8 +1056,8 @@ font-family: 'Century Gothic';
 
 -------------------------------------------------------*/
 .contact_form{
-    margin:5% auto;
-}
+    margin:7% auto;
+    }
 #map {
     height: 400px;
   }
@@ -1248,3 +1251,29 @@ font-family: 'Century Gothic';
     100% { opacity: 0; }
 }
 
+
+
+.planet-view {
+    padding: 10px;
+  }
+  
+  .planet-view.ng-animate {
+    transition: all ease 0.4s;
+    position: absolute;
+  }
+  
+  .planet-view.ng-enter {
+    top: 200px;
+    opacity: 0;
+  }
+  
+  .planet-view.ng-leave,
+  .planet-view.ng-enter.ng-enter-active {
+    top: 0;
+    opacity: 1;
+  }
+  
+  .planet-view.ng-leave.ng-leave-active {
+    top: -200px;
+    opacity: 0;
+  }
