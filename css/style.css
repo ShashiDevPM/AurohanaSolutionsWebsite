@@ -354,12 +354,10 @@ background-image: url("../images/webdesign.JPG") ;
 /*	BUTTON
 ------------------------------*/
 .btn {
-    font-size: 14px;
- 
-    margin-right: 0px;
-
-    text-transform: uppercase;
-    border-radius: 0;
+    font-size: 1.5vw;
+    /*  line-height: 5;*/
+     text-transform: uppercase;
+     border-radius: 0;
 }
 .btn:focus,.btn:active {
     outline: none;
@@ -369,7 +367,7 @@ background-image: url("../images/webdesign.JPG") ;
 	border-radius: 3px;
 	padding: 0.8em 1.8em;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 550;
 	-webkit-transition: all .5s ease-out;
 	-moz-transition: all .5s ease-out;
 	transition: all .5s ease-out;
@@ -380,19 +378,33 @@ background-image: url("../images/webdesign.JPG") ;
 }
 .btn-custom-outline {
 	
-    padding-right: 0px;
-    padding-left: 0px;
+    border-radius: 3px;
+	padding: 0.8em 1.8em;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 550;
 	-webkit-transition: all .5s ease-out;
 	transition: all .5s ease-out;
 	text-transform: uppercase;
 	background-color: transparent;
 	border-color: #ffffff;
+	
+	    padding: 3.8em 1.8em;
+		    width: 34%;
+	border-right-style:none;
+	border-bottom-style:none;
+}
+.btn-custom-outline.left{
+	border-left-style:none;
+	
 }
 .btn-custom-outline:hover,.btn-custom-outline:focus{
 	color: #ffffff;
 	background-color: rgba(255,255,255,.5);
+}
+.btn-bar{
+	text-align:center;
+	background-color:rgba(255,255,255,0.28);
+	display:flex;
 }
 .btn-bar a{
 	margin-right: 0px;
